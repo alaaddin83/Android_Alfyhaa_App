@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.alaaddin.alfyhaa">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Authentication.AllRegistryActivity"/>
+        <activity android:name=".Authentication.RegistryActivity"
+            android:label="صفحة الاداريين ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".AboutCourse"
+            android:label="معلومات عن الدورة" />
+        <activity
+            android:name=".Courses"
+            android:label="الدورات المتوفرة" />
+        <activity
+            android:name=".AboutInstut"
+            android:label="معهد الفيحاء المهني" />
+        <activity
+            android:name=".Authentication.Login"
+            android:label="صفحة الدخول للمتدربين" />
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>

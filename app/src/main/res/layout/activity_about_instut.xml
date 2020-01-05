@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    tools:context=".AboutInstut">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/image_starter"
+        android:layout_marginBottom="4dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrolabout"
+        android:layout_height="320dp"
+        android:layout_below="@+id/imageView">
+
+        <TextView
+            android:id="@+id/tV_ABOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:gravity="center"
+         android:layout_below="@+id/scrolabout"
+
+        android:foregroundGravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_backshapeaboute"
+            android:text="location" />
+
+        <Button
+            android:id="@+id/btn_website"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_backshapeaboute"
+            android:text="Website" />
+
+        <Button
+            android:id="@+id/btn_face"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_backshapeaboute"
+            android:text="Facebook" />
+    </LinearLayout>
+
+</RelativeLayout>

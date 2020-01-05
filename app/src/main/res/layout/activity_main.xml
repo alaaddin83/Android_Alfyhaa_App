@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/image_starter"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/app_startext"
+        android:textColor="@android:color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/BTN_login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_loginshape"
+        android:gravity="center"
+        android:text="تسجيل دخول"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btn_aboutinstit"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_coursesshape"
+        android:text="معلومات عن المعهد"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+    <Button
+        android:id="@+id/btn_cours"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_coursesshape"
+        android:text="الدورات المتوفرة"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+
+</LinearLayout>
